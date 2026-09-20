@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>AMG Assistant</title>
+<style>
+*{box-sizing:border-box}body{margin:0;font-family:Arial,sans-serif;background:#0b1020;color:#fff}
+.wrap{max-width:720px;margin:auto;padding:22px}.hero{padding:24px 0 14px}
+h1{margin:0 0 8px;font-size:30px}.muted{color:#aab2c8}.grid{display:grid;grid-template-columns:repeat(2,1fr);gap:12px;margin-top:18px}
+.card{background:#151d33;border:1px solid #293451;border-radius:18px;padding:18px}.balance{font-size:30px;font-weight:700;margin-top:8px}
+button{width:100%;padding:14px;border:0;border-radius:12px;background:#2f6fed;color:#fff;font-size:16px;margin-top:10px}
+.notice{margin-top:18px;padding:14px;border-radius:14px;background:#121a2c;color:#cbd3e6;font-size:14px}
+@media(max-width:480px){.grid{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+<main class="wrap">
+<section class="hero">
+<div class="muted">AMG Assistant</div>
+<h1>منصة التداول التجريبية</h1>
+<div class="muted">واجهة اختبارية لإدارة الحساب ومتابعة التداول.</div>
+</section>
+<section class="card">
+<div class="muted">الرصيد التجريبي</div>
+<div class="balance" id="balance">$10,000.00</div>
+<button type="button" id="trade">تجربة صفقة</button>
+</section>
+<section class="grid">
+<div class="card"><div>👤</div><h3>حسابي</h3><div class="muted">بيانات الحساب</div></div>
+<div class="card"><div>📊</div><h3>التداول</h3><div class="muted">الصفقات التجريبية</div></div>
+<div class="card"><div>📈</div><h3>السجل</h3><div class="muted">آخر العمليات</div></div>
+<div class="card"><div>🆘</div><h3>الدعم</h3><div class="muted">مساعدة المستخدم</div></div>
+</section>
+<div class="notice">هذه نسخة تجريبية فقط. لا يتم فيها استقبال أموال أو تنفيذ تداول حقيقي.</div>
+</main>
+<script>
+document.getElementById('trade').addEventListener('click',()=>alert('تم تنفيذ صفقة تجريبية بنجاح.'));
+</script>
+</body></html>
